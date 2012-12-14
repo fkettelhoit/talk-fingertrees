@@ -1,0 +1,7 @@
+digraph ll {
+  rankdir = LR;
+  node [shape=record, width=.2, height=.2];
+
+  nil [shape=plaintext]
+  A->B->C->D->nil;
+}

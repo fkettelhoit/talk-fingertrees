@@ -1,0 +1,22 @@
+digraph ll {
+  rankdir = LR;
+  node [shape=record, width=.2, height=.2];
+
+  X [color=blue, fontcolor=blue]
+  Y [color=blue, fontcolor=blue]
+  Z [color=blue, fontcolor=blue]
+
+  // sorry for this horrible mess, but I couldn't get the
+  // alignment of X, Y, Z to work correctly otherwise...
+  edge [color=blue]
+  X->Y->Z->B;
+  edge [color=black]
+  B->C->D;
+  A->B;
+  D->C->B
+  edge [color=red]
+  B->Z;
+  node [color=blue, fontcolor=blue]
+  edge [color=blue]
+  Z->Y->X;
+}
